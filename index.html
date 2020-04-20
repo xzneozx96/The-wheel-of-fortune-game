@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The wheel of fortune</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="game-container">
+        <div class="wheel-container">
+            <img src="/Assets/pointer.png" width="40px" height="50px">
+            <img src="/Assets/lucky-wheel.png" id="wheel-img" width="450px" height="450px">
+            <button class="spinner button" id="spinner">SPIN</button>
+        </div>
+
+        <div class="question-board">
+            <h2>Question: <br><span id="quiz" style="color: #d12140;">Question goes here</span></h2>
+
+            <button id="lucky-letter" class="lucky">LUCKY LETTER</button>
+
+            <ul id="secret-word">
+
+            </ul>
+
+            <button id="reveal-button" class="reveal-answer">ANSWER</button>
+            <button id="reset" class="reset">NEW GAME</button>
+
+            <ul id="btn-container">
+
+            </ul>
+        </div>
+
+        <div class="player player1-info">
+            <img src="/Assets/sugerBTS.jpg" class="player1" width="185px" height="250px">
+            <table class="score-board">
+                <tr>
+                    <th colspan="2"><h2 style="margin: 0;">KHANH VY<br><span data-add="one" class="player-points">0</span></h2></th>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="handle-points points-option">
+                            <option value="ADD">ADD</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                            <option value="500">500</option>
+                            <option value="600">600</option>
+                            <option value="700">700</option>
+                            <option value="800">800</option>
+                            <option value="900">900</option>
+                            <option value="1000">1000</option>
+                            <option value="1200">1200</option>
+                            <option value="1500">1500</option>
+                        </select>
+                    </td>
+                    <td><button class="handle-points double-points" data-double="one">DOUBLE</button></td> 
+                </tr>
+                <tr>
+                    <td><button class="handle-points lose-all" data-lose="one">LOSE ALL</button></td>
+                    <td><button class="handle-points divide-in-half" data-divide="one">DIVIDED BY 2</button></td> 
+                </tr>
+            </table>
+        </div>
+
+        <div class="player player2-info">
+            <img src="/Assets/roseBlackPink.jpg" class="player2" width="185px" height="250px">
+            <table class="score-board">
+                <tr>
+                    <th colspan="2"><h2 style="margin: 0;">NGOC TU<br><span class="player-points">0</span></h2></th>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="handle-points points-option">
+                            <option value="ADD">ADD</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                            <option value="500">500</option>
+                            <option value="600">600</option>
+                            <option value="700">700</option>
+                            <option value="800">800</option>
+                            <option value="900">900</option>
+                            <option value="1000">1000</option>
+                            <option value="1200">1200</option>
+                            <option value="1500">1500</option>
+                        </select>
+                    </td>
+                    <td><button class="handle-points double-points" data-double="two">DOUBLE</button></td> 
+                </tr>
+                <tr>
+                    <td><button class="handle-points lose-all" data-lose="two">LOSE ALL</button></td>
+                    <td><button class="handle-points divide-in-half" data-divide="two">DIVIDED BY 2</button></td> 
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
